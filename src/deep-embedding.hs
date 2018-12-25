@@ -14,6 +14,9 @@ data Contract contract
 data Original contract
   	= Truncate Time contract
   	| Then contract contract
-  	| Get contract
   	| Anytime contract
   	deriving Show
+
+data Horizon = Time Time | Infinite deriving (Eq, Ord, Show)
+
+data Currency = GBP | USD | EUR deriving (Eq, Show)
