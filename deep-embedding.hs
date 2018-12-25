@@ -1,8 +1,6 @@
 {-# LANGUAGE DeriveFunctor, OverloadedStrings, TypeOperators, MultiParamTypeClasses, FlexibleInstances, FlexibleContexts, GADTs #-}
 module Language where
 
-import Control.Monad.Free
-
 data Contract contract
 	= Zero
     | One  Currency
